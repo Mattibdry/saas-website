@@ -13,13 +13,24 @@ html {
   box-sizing: inherit;
 }
 
+h3 {
+  font-family: "Heiti SC", sans-serif;
+}
 
-header {
+.header-index {
   background-image: url("../images/hero-image.jpg");
   height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: "Heiti SC", sans-serif;
+  color: white;
+}
+
+.header-subpage {
+  background-color: #2980B9;
+  height: 40rem;
+  background-size: cover;
   font-family: "Heiti SC", sans-serif;
   color: white;
 }
@@ -35,6 +46,15 @@ header {
   border-radius: 30px;
   font-size: .8rem;
   color: #fff;
+  font-family: "Heiti SC", sans-serif;
+}
+
+.subpage-main-icon {
+  width: 75%;
+}
+
+.subpage-jumbotron-header{
+
 }
 
 .call-to:hover {
@@ -204,6 +224,41 @@ h2 {
   color: #2980B9;
 }
 
+/* Products - Section-1 */
+
+.products-icon-label {
+  color: #2980B9;
+}
+
+/* Products - Section-2 */
+
+.section-products-2 {
+  background-color: #2C3E50;
+  color: #fff;
+  font-family: "Helvetica Neue",sans-serif;
+}
+
+.section-products-2 h4 {
+  padding-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.section-products-2 p {
+  font-weight: lighter;
+}
+
+.faq-title {
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+/* Pricing - section-1 */
+
+.pricing-card-bg {
+  background-color: #3498DB;
+}
+
+
 /* Footer */
 
 footer {
@@ -236,12 +291,26 @@ display: inline-block;
   padding-left: 0;
 }
 
-.jumbotron-text {
+.jumbotron-container {
   padding-top: 8em;
 }
 
 .card-icon {
   max-width: 112px;
+}
+
+/* Product-Page */
+
+.subpage-main-icon {
+  max-width: 450px;
+}
+
+.subpage-jumbotron-container {
+  padding-top: 2em;
+}
+
+.header-subpage {
+  height: 35em;
 }
 
 }
@@ -276,6 +345,32 @@ ul {
   display: block;
 }
 
+/* Product-Page */
+
+.section-products-1 {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+h4 {
+  font-size: 1.13rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .91rem;
+}
+
+/* Pricing Page */
+
+.header-p {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -292,10 +387,23 @@ ul {
   max-width: 160px;
 }
 
+/* Pricing Page */
+
+.header-p {
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
 }
 
 @media only screen and (min-width: 90em) {
 
+  /* Pricing Page */
+
+  .header-p {
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
 
 
 }
