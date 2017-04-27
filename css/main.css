@@ -108,7 +108,33 @@ h2 {
   text-decoration: none;
   background-color: #fff;
   font-family: "Heiti SC",sans-serif;
-  padding: 1em 1.5em 1em 1.5em;
+  padding: 1em 1em 1em 1em;
+  opacity: 1;
+}
+
+.hover {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.hover:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.card-button:hover span {
+  padding-right: 25px;
+}
+
+.card-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 
@@ -135,8 +161,6 @@ h2 {
 
 .btn-2 {
   color: #3498DB;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .btn-2:hover{
@@ -152,8 +176,6 @@ h2 {
 
 .btn-3 {
   color: #2980B9;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .btn-3:hover{
@@ -256,8 +278,98 @@ h2 {
 
 .pricing-card-bg {
   background-color: #3498DB;
+  font-family: "Heiti SC", sans-serif;
+  border-bottom: 2px solid #fff;
 }
 
+.package-h2 {
+  font-size: 3em;
+}
+
+.package-sub {
+  font-size: 1em;
+  margin-bottom: 3em;
+  color: #2C3E50;
+}
+
+.package-sub-wtext {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  color: #2C3E50;
+}
+
+.package-specs {
+  font-size: .95rem;
+  color: #fff;
+}
+
+.free-spacing {
+  padding-bottom: 8px;
+}
+
+.month-text {
+  font-size: .5em;
+}
+
+/* Our Team */
+
+.width-fix {
+ margin: auto;
+ max-width: 650px;
+}
+
+.section-team-1 {
+  padding-top: 3em;
+}
+
+.section-team-2 {
+  background-color: #2C3E50;
+  text-align: center;
+}
+
+.team-img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.employee-container {
+  display: inline-block;
+}
+
+.name {
+  color: #3498DB;
+}
+
+.position {
+  color: #3498DB;
+  font-family: "helvetica neue", sans-serif;
+  font-weight: 600;
+}
+
+.social {
+  width: 15%;
+  max-width: 35px;
+}
+
+/* Our Team - 2 */
+
+.coffee-icon {
+  width: 100%;
+  margin: auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.coffee-text {
+  color: #fff;
+  max-width: 250px;
+  margin: auto;
+  padding-top: .5em;
+}
+
+.last {
+  padding-left: 0;
+}
 
 /* Footer */
 
@@ -270,6 +382,7 @@ footer {
 
 footer ul {
   padding-right: 0;
+  padding-left: 0;
 }
 
 footer a {
@@ -312,6 +425,9 @@ display: inline-block;
 .header-subpage {
   height: 35em;
 }
+
+/* Our Team */
+
 
 }
 
@@ -371,6 +487,79 @@ p {
   margin-right: 4rem;
 }
 
+.pricing-card-bg {
+  background-color: #fff;
+}
+
+.section-pricing-1 {
+  background-color: #fff;
+}
+
+.pricing1 {
+  background-image: url("../images/pricing-img/free.svg");
+  height: 25em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.pricing2 {
+  background-image: url("../images/pricing-img/standard.svg");
+  height: 25em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.pricing3 {
+  background-image: url("../images/pricing-img/premium.svg");
+  height: 25em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.coffee-text {
+  margin-left: 0;
+}
+
+.coffee-icon {
+  margin-right: 0;
+}
+
+
+/* Font hidding */
+.package-h2 {
+  display: none;
+}
+
+.package-sub {
+  display: none;
+}
+
+.package-sub-wtext {
+  display: none;
+}
+
+.package-specs {
+  display: none;
+}
+
+.button-pricing {
+  display: none;
+}
+
+.coffee-text {
+  font-size: 1.5em;
+  max-width: 500px;
+}
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -394,6 +583,16 @@ ul {
   margin-right: 12rem;
 }
 
+.section-pricing-1 {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.employee-container {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -403,6 +602,14 @@ ul {
   .header-p {
     margin-left: 18rem;
     margin-right: 18rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 434px) {
+  .coffee-text {
+
   }
 
 
