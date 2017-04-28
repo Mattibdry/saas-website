@@ -224,6 +224,11 @@ h2 {
   background-color: #2980B9;
 }
 
+figure {
+  background-color: #2980b9;
+  margin: 0;
+}
+
 .mac-image {
   width: 100%;
 }
@@ -328,6 +333,11 @@ h2 {
 
 .month-text {
   font-size: .5em;
+}
+
+.product-description {
+  font-size: 1.1em;
+  color: #3498DB;
 }
 
 /* Our Team */
