@@ -1,29 +1,76 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html class="sign-up-bg" lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>saas-website</title>
+  <title>Sign Up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-<body class="sign-up-bg">
-  <div>
-    <form class="" action="index.html" method="post">
+<body>
 
+  <header>
+    <div class="grid gutter-1-2 pad-t-1-2">
+
+      <div class="unit xs-1 s-1-4 m-1-4 l-1-4 text-center">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+      </div>
+
+      <div class="unit xs-1 s-3-4 m-3-4 l-3-4">
+        <nav>
+          <ul class="pad-t-1-2 nav push">
+            <li class="pad-t-1-2"><a href="tour.html" class="mega gutter-1-2">Products</a></li>
+            <li class="pad-t-1-2"><a href="pricing.html" class="mega gutter-1-2">Pricing</a></li>
+            <li class="pad-t-1-2"><a href="team.html" class="mega gutter-1-2">Our Team</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/matt.beaudry.pe@gmail.com" method="POST">
+
+      <h1 class="sign-up-text">Sign Up</h1>
+      <h2 class="filler">Filler</h2>
       <fieldset>
-        <label for="name">First Name</label>
-        <input type="text" name="" value="">
+        <legend class="push-1-2 text-center mega">Welcome To Logit!</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user-name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user-email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user-password">
       </fieldset>
 
-      <fieldset>
-        <label for="name">Last Name</label>
-        <input type="text" name="" value="">
-      </fieldset>
-
+      <button class="form-button" type="submit">Sign Up</button>
     </form>
-  <div>
+  </main>
+  <footer class="hide-footer">
+    <div class="">
+      <div class="social-badges text-center">
+        <img src="images/instagram-icon.png" alt="">
+        <img src="images/rss-icon.png" alt="">
+        <img src="images/facebook-icon.png" alt="">
+        <img src="images/twitter-icon.png" alt="">
+      </div>
+      <div class="text-center pad-t-1-2">
+        <ul class="list-group-inline">
+          <li class="micro gutter-1-2"><a href="index.html">HOME</a></li>
+          <li class="micro gutter-1-2"><a href="tour.html">PRODUCTS</a></li>
+          <li class="micro gutter-1-2"><a href="pricing.html">PRICING</a></li>
+          <li class="micro gutter-1-2"><a href="team.html">TEAM</a></li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <p class="micro">Powered by: Mattibdry Designs</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

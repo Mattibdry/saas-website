@@ -22,6 +22,10 @@ h3 {
   font-family: "Heiti SC", sans-serif;
 }
 
+header {
+  font-family: "Heiti SC", sans-serif;
+}
+
 .header-index {
   background-image: url("../images/hero-image.jpg");
   height: 40rem;
@@ -65,12 +69,7 @@ h3 {
 }
 
 .sign-up-bg {
-  background-image: url("../images/hero-image-subpage.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 20em;
-  width: 100%;
+  background-color: #3498db;
 }
 
 .call-to:hover {
@@ -417,6 +416,63 @@ footer a {
   color: #2c3e50;
 }
 
+/* Sign-Up */
+
+form {
+  font-family: "Heiti SC", sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  margin-top: 2em;
+}
+
+.sign-up-text {
+  text-align: center;
+  margin-bottom: .2em;
+  margin-top: .5em;
+  color: #777;
+}
+
+fieldset {
+  border-top: 0;
+}
+
+.hide-footer {
+  display: none;
+}
+
+label {
+  font-size: .8em;
+}
+
+input {
+  border: none;
+  font-size: 1em;
+  height: 2em;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.form-button {
+  padding: 1em;
+  color: #fff;
+  background-color: #e74c3c;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #e65c3c;
+  border-width: 1px 1px 3px;
+}
+
 @media only screen and (min-width: 25em) {
 
   .logo {
@@ -433,7 +489,7 @@ footer a {
   }
 
   .jumbotron-container {
-    padding-top: 8em;
+    padding-top: 6em;
   }
 
   .card-icon {
